@@ -1,0 +1,13 @@
+// Copyright 2020 Ramsay Carslaw
+
+#include <stdio.h>
+
+/*
+ * The main function used to drive all the other functions
+ */
+int
+main(int argc, char **argv)
+{
+     printf("Hello World\n");
+     return 0;
+}

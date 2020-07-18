@@ -1,0 +1,26 @@
+#+TITLE: C Game Engine
+#+AUTHOR: Ramsay Carslaw
+#+OPTIONS: toc:2
+
+* Table of Contents 
+
+* Introduction
+The aim of this is to create a platform to make creating games in C more easy.
+
+* Usage
+To create a new StateManger you can use the init and free functions
+#+BEGIN_SRC C
+#include "engine/engine.h"
+
+StateManger *statemanger;
+STATEMANAGER_init(statemanager);
+// code goes here
+STATEMANGER_free(statemanager);
+#+END_SRC
+When you create a statemanger control of the memory is passed to you. To destroy it agan you can use the deconstructer as shown above.
+
+* Installation
+Place the engine folder in your project and add
+#+BEGIN_SRC C
+#include "./engine/engine.h"
+#+END_SRC
